@@ -9,12 +9,11 @@
 #include <SFML/Window.hpp>
 #include <SFML/OpenGL.hpp>
 
-#include <Vector3.h>
-#include <Matrix3.h>
+#include <Vector.h>
+#include <Matrix.h>
 
 using namespace std;
 using namespace sf;
-using namespace gpp;
 
 class Game
 {
@@ -32,6 +31,12 @@ private:
 
 	Clock clock;
 	Time elapsed;
+
+	Matrix newmat;
+	Vector topLeft;
+	Vector topRight;
+	Vector bottomLeft;
+	Vector bottomRight;
 
 	float rotationAngle = 0.0f;
 };
